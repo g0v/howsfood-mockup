@@ -8,19 +8,25 @@ block body
         | 好食市集
         //-img.logo.image(src="img/logo-white.png")
         //-span.logo.text 　
-      a.item(href="buy")
+      //-a.item(href="buy")
         | 馬上買
-      a.item(href="order")
+      a.item(href="book")
         | 預購
       .right.menu
-        .item
-          .ui.icon.input.inverted.transparent
-            input(placeholder="搜尋...",type="text")
-            i.icon.search.link
-        //-a.item(href="download")
-          | 下載
-          i.icon.download
-        a.item(href="")
+        a.item 菜籃
+          .ui.right.red.label 10
+        .ui.simple.dropdown.item
+          .ui.image.avatar
+            img(src="https://pbs.twimg.com/profile_images/93787198/etb2006.jpg")
+          | ETBlue
+          i.icon.dropdown
+          .menu
+            //-a.item 菜籃
+              .ui.right.red.label 10
+            a.item 我的菜市
+            a.item 我的訂單
+            a.item 登出
+        //-a.item(href="")
           | 登入
           i.icon.sign.in
         block topbar
@@ -37,6 +43,8 @@ block body
         | 關於本站
       .right.menu
         a.ui.button.item(target="_blank",href="") 好食機
+          i.icon.forward.mail
+        a.ui.button.item(target="_blank",href="") 好食光
           i.icon.forward.mail
         a.ui.button.item(target="_blank",href="") 愛樂活
           i.icon.forward.mail
