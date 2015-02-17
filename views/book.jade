@@ -1,0 +1,44 @@
+extends level-one
+
+block head
+
+block title
+  | 預購 | 
+
+block content
+
+  #content.page.wrapper
+    .ui.secondary.pointing.menu
+      a.item(href='') 穀麥
+        .ui.green.tiny.label 10
+      a.item(href='') 蔬菜
+        .ui.green.tiny.label 10
+      a.item(href='') 水果
+        .ui.green.tiny.label 10
+      a.item(href='') 肉類
+        .ui.green.tiny.label 10
+      a.item(href='') 水產
+        .ui.green.tiny.label 10
+      .right.menu
+        .item
+          .ui.icon.input.transparent
+            input(placeholder="搜尋...",type="text")
+            i.icon.search.link
+
+    .ui.two.column.stackable.grid
+      .column
+        .ui.segment
+          .ui.green.top.attached.label 菜市團購中！再 1 份可湊滿一箱
+          span.float.right 可購買：10，湊箱中：8
+          .ui.header 地瓜葉
+          .ui.divided.list
+            .item 農夫：謝老闆
+            .item 耕地：天龍國外星語言區 1 號地
+            .item 收成日期：2015/1/1 (今天)
+            .item 每份售價：30 元
+          .ui.red.icon.labeled.button 放入菜籃
+            i.icon.cart
+
+block script
+  script.
+    $("#topbar a[href*='book']").addClass("active");

@@ -50,38 +50,6 @@ a, a:link {
   clear: both;
 }
 
-#topbar {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  background-color: #333333;
-  z-index: 10;
-}
-#topbar .ui.menu {
-  margin-bottom: 0;
-}
-#topbar .ui.menu .item {
-  font-size: 1rem;
-}
-#topbar .ui.menu .logo.image {
-  height: 1rem;
-  display: inline;
-}
-
-#content {
-  padding: 2.57rem 0;
-}
-
-#bottombar {
-  background-color: #333333;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-}
-
 .page.wrapper {
   max-width: 1200px;
   margin-left: auto;
@@ -100,6 +68,45 @@ a, a:link {
   box-shadow: none;
 }
 
+#topbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #333333;
+  z-index: 10;
+}
+#topbar .ui.menu {
+  margin-bottom: 0;
+}
+#topbar .ui.menu .item {
+  font-size: 1rem;
+}
+#topbar .ui.menu .item .avatar.image {
+  margin-top: -0.8em;
+  margin-bottom: -0.8em;
+}
+#topbar .ui.menu .logo.image {
+  height: 1rem;
+  display: inline;
+}
+
+#content {
+  padding: 3rem 0;
+}
+#content .item .ui.label {
+  margin-right: 1em;
+}
+
+#bottombar {
+  background-color: #333333;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
 #music, #news, #lesson, #download {
   padding: 1rem 0;
 }
@@ -109,18 +116,6 @@ a, a:link {
 }
 #music #header .header, #news #header .header, #lesson #header .header, #download #header .header {
   text-align: center;
-}
-
-#music #header {
-  background-color: #993366;
-}
-
-#news #header {
-  background-color: #dd9900;
-}
-
-#download #header {
-  background-color: #339966;
 }
 
 #lesson #header {
@@ -147,28 +142,4 @@ a, a:link {
 }
 #lesson .list .item .link {
   margin-left: 0.5rem;
-}
-
-#book {
-  position: absolute;
-  top: 2.6rem;
-  bottom: 2.6rem;
-  left: 0;
-  right: 0;
-}
-#book .frame {
-  width: 100%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  top: 0;
-  bottom: 0;
-}
-#book .frame iframe {
-  width: 100%;
-  height: 100%;
-  margin-bottom: -5px;
-  border: 0;
-  overflow-y: hidden;
 }
