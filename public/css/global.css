@@ -1,0 +1,174 @@
+@charset "UTF-8";
+html {
+  font-family: "Noto Sans", "Noto Sans T Chinese", "微軟正黑體", sans-serif;
+  color: #333333;
+}
+
+html, body, div, nav, section, article, header, footer, h1, h2, h3, h4, p {
+  font-size: 20px;
+}
+
+html, body, div, nav, section, article, header, footer, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #efefef;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a, a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+.no.margin {
+  margin: 0;
+}
+
+.float.right {
+  float: right;
+}
+
+.align.center {
+  text-align: center;
+}
+
+.clear.both {
+  clear: both;
+}
+
+#topbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #333333;
+  z-index: 10;
+}
+#topbar .ui.menu {
+  margin-bottom: 0;
+}
+#topbar .ui.menu .item {
+  font-size: 1rem;
+}
+#topbar .ui.menu .logo.image {
+  height: 1rem;
+  display: inline;
+}
+
+#content {
+  padding: 2.57rem 0;
+}
+
+#bottombar {
+  background-color: #333333;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.page.wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu.bar {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#music, #news, #lesson, #download {
+  padding: 1rem 0;
+}
+#music #header, #news #header, #lesson #header, #download #header {
+  height: 8rem;
+  margin: -1rem 0 1rem 0;
+}
+#music #header .header, #news #header .header, #lesson #header .header, #download #header .header {
+  text-align: center;
+}
+
+#music #header {
+  background-color: #993366;
+}
+
+#news #header {
+  background-color: #dd9900;
+}
+
+#download #header {
+  background-color: #339966;
+}
+
+#lesson #header {
+  background-color: #336699;
+}
+#lesson .download.section {
+  text-align: center;
+  padding: 1rem;
+  margin: 0 -1rem -0.5rem -1rem;
+  background-color: #eeeeee;
+}
+#lesson .placeholder {
+  margin-top: 2.5rem !important;
+}
+#lesson .ui.top.attached.label {
+  text-align: center;
+}
+#lesson .ui.top.attached.label h3 .title {
+  padding: 0.5rem 0;
+  display: inline-block;
+}
+#lesson .ui.grid {
+  margin-top: 0.5rem;
+}
+#lesson .list .item .link {
+  margin-left: 0.5rem;
+}
+
+#book {
+  position: absolute;
+  top: 2.6rem;
+  bottom: 2.6rem;
+  left: 0;
+  right: 0;
+}
+#book .frame {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+#book .frame iframe {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -5px;
+  border: 0;
+  overflow-y: hidden;
+}

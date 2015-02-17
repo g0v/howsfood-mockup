@@ -1,0 +1,145 @@
+@charset "UTF-8"
+@import compass/css3
+
+html
+  font-family: 'Noto Sans', 'Noto Sans T Chinese', '微軟正黑體', sans-serif
+  color: #333
+
+html, body, div, nav, section, article, header, footer, h1, h2, h3, h4, p
+  font-size: 20px
+  //font-weight: bold
+
+html, body, div, nav, section, article, header, footer, h1, h2, h3, h4
+  margin: 0
+  padding: 0
+  line-height: 1em
+  +box-sizing(border-box)
+
+html, body
+  background-color: #efefef
+
+p
+  line-height: 1.5em
+
+a, a:link
+  text-decoration: none
+  color: inherit
+
+.hidden
+  display: none
+
+.no.margin
+  margin: 0
+
+.float.right
+  float: right
+
+.align.center
+  text-align: center
+
+.clear.both
+  clear: both
+
+#topbar
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  background-color: #333
+  z-index: 10
+  .ui.menu
+    margin-bottom: 0
+    .item
+      font-size: 1rem
+    .logo.image
+      height: 1rem
+      //-margin: -1rem 0.5rem -0.1rem 0
+      display: inline
+
+#content
+  padding: 2.57rem 0
+
+#bottombar
+  background-color: #333
+  position: fixed
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 10
+  .ui.menu
+
+.page.wrapper
+  max-width: 1200px
+  margin-left: auto
+  margin-right: auto
+
+.menu.bar
+  max-width: 1200px
+  margin-left: auto
+  margin-right: auto
+  +border-radius(0)
+  +box-shadow(none)
+
+
+#music, #news, #lesson, #download
+  padding: 1rem 0
+  #header
+    height: 8rem
+    margin: -1rem 0 1rem 0
+    .header
+      text-align: center
+
+#music
+  #header
+    background-color: #936
+#news
+  #header
+    background-color: #d90
+#download
+  #header
+    background-color: #396
+
+#lesson
+  #header
+    background-color: #369
+  .download.section
+    text-align: center
+    padding: 1rem
+    margin: 0 -1rem -0.5rem -1rem
+    background-color: #eee
+  .placeholder
+    margin-top: 2.5rem!important
+  .ui.top.attached.label
+    text-align: center
+    h3
+      .title
+        padding: 0.5rem 0
+        display: inline-block
+  .ui.grid
+    margin-top: 0.5rem
+  .list
+    .item
+      .link
+        margin-left: 0.5rem
+
+#book
+  position: absolute
+  top: 2.6rem
+  bottom: 2.6rem
+  left: 0
+  right: 0
+  .frame
+    width: 100%
+    max-width: 1200px
+    margin-left: auto
+    margin-right: auto
+    position: relative
+    top: 0
+    bottom: 0
+    iframe
+      width: 100%
+      height: 100%
+      margin-bottom: -5px
+      border: 0
+      overflow-y: hidden
+
