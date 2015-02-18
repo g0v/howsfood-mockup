@@ -14,8 +14,8 @@
     <!-- jquery-->
     <script type="text/javascript" src="assets/jquery-2.1.3.min.js"></script>
     <!-- semantic ui-->
-    <link rel="stylesheet" type="text/css" href="assets/semantic-ui/1.4.0/semantic.min.css"/>
-    <script type="text/javascript" src="assets/semantic-ui/1.4.0/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/semantic-ui/1.9.0/semantic.min.css"/>
+    <script type="text/javascript" src="assets/semantic-ui/1.9.0/semantic.min.js"></script>
     <!-- handlebars-->
     <script type="text/javascript" src="assets/handlebars-v2.0.0.js"></script>
     <!-- underscore-->
@@ -27,7 +27,7 @@
     <script type="text/javascript" src="js/global.js"></script>
     <!-- for mobile, responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>預購 | 好食市集</title>
+    <title>馬上買 | 好食市集</title>
   </head>
   <body>
     <nav id="topbar">
@@ -43,12 +43,14 @@
       </div>
     </nav>
     <div id="content" class="page wrapper">
-      <div class="ui secondary pointing menu"><a href="" class="item">穀麥
-          <div class="ui green tiny label">10</div></a><a href="" class="item">蔬菜
-          <div class="ui green tiny label">10</div></a><a href="" class="item">水果
-          <div class="ui green tiny label">10</div></a><a href="" class="item">肉類
-          <div class="ui green tiny label">10</div></a><a href="" class="item">水產
-          <div class="ui green tiny label">10</div></a>
+      <div id="filter" class="ui secondary pointing menu"><a class="item">推薦
+          <div class="ui pink tiny label">10</div></a><a class="active item">全部
+          <div class="ui black tiny label">20</div></a><a class="item">穀麥
+          <div class="ui black tiny label">3</div></a><a class="item">蔬菜
+          <div class="ui black tiny label">7</div></a><a class="item">水果
+          <div class="ui black tiny label">5</div></a><a class="item">肉類
+          <div class="ui black tiny label">2</div></a><a class="item">水產
+          <div class="ui black tiny label">3</div></a>
         <div class="right menu">
           <div class="item">
             <div class="ui icon input transparent">
@@ -57,18 +59,141 @@
           </div>
         </div>
       </div>
-      <div class="ui two column stackable grid">
+      <div id="list" class="ui two column stackable grid">
         <div class="column">
-          <div class="ui segment">
-            <div class="ui green top attached label">菜市團購中！再 1 份可湊滿一箱</div><span class="float right">可購買：10，湊箱中：8</span>
-            <div class="ui header">地瓜葉</div>
+          <div class="ui pink segment"><a href="" class="ui label float right">生產日記<span class="number">farmer-product-date</span><i class="icon right arrow"></i></a>
+            <h2 class="ui header">糙米<a class="ui circular label"><i class="icon food"></i></a></h2>
+            <div class="ui divider"></div>
+            <div class="ui image"><img src="http://static.ettoday.net/images/173/d173736.jpg"/></div>
             <div class="ui divided list">
-              <div class="item">農夫：謝老闆</div>
-              <div class="item">耕地：天龍國外星語言區 1 號地</div>
-              <div class="item">收成日期：2015/1/1 (今天)</div>
-              <div class="item">每份售價：30 元</div>
+              <div class="item">
+                <div class="ui horizontal black label">農夫</div>高村長
+              </div>
+              <div class="item">
+                <div class="ui horizontal black label">耕地</div>新天龍國外星語言區 4 號地
+              </div>
+              <div class="item">
+                <div class="ui horizontal red label">預定收成</div>2015/2 (三週後)
+              </div>
             </div>
-            <div class="ui red icon labeled button">放入菜籃<i class="icon cart"></i></div>
+            <div class="ui divider"></div>
+            <p>每份<span class="price number">NT$ 50</span>元，剩餘<span class="amount number">100</span>份</p>
+            <div class="ui pink message">較少人訂貨，歡迎預購！</div>
+            <div class="ui message">您的菜市正在預約團購！再 1 份可湊滿一箱</div>
+            <div class="ui selection simple dropdown">
+              <input name="份數" type="hidden"/>
+              <div class="default text">份數</div><i class="icon dropdown"></i>
+              <div class="menu">
+                <div data-value="1" class="item">1 份</div>
+                <div data-value="2" class="item">2 份</div>
+                <div data-value="3" class="item">3 份</div>
+                <div data-value="4" class="item">4 份</div>
+                <div data-value="5" class="item">5 份</div>
+                <div data-value="6" class="item">6 份</div>
+              </div>
+            </div>
+            <div class="ui icon labeled teal basic button">加入預約團購<i class="icon add"></i></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui black segment"><a href="" class="ui label float right">生產日記<span class="number">farmer-product-date</span><i class="icon right arrow"></i></a>
+            <h2 class="ui header">地瓜葉<a class="ui circular label"><i class="icon food"></i></a></h2>
+            <div class="ui divider"></div>
+            <div class="ui image"><img src="http://blufiles.storage.live.com/y1pX6mVV-vrjX69KMOiG_aprByZhdmel-urs5zB0Wvx09gUQoSEU2yd2Ct_tLyWLuYYgWntakXWKCU"/></div>
+            <div class="ui divided list">
+              <div class="item">
+                <div class="ui horizontal black label">農夫</div>謝老闆
+              </div>
+              <div class="item">
+                <div class="ui horizontal black label">耕地</div>醫龍國外星語言區 1 號地
+              </div>
+              <div class="item">
+                <div class="ui horizontal red label">預定收成</div>2015/2 (三週後)
+              </div>
+            </div>
+            <div class="ui divider"></div>
+            <p>每份<span class="price number">NT$ 50</span>元，剩餘<span class="amount number">10</span>份</p>
+            <div class="ui message">您的菜市正在預約團購！再 1 份可湊滿一箱</div>
+            <div class="ui selection simple dropdown">
+              <input name="份數" type="hidden"/>
+              <div class="default text">份數</div><i class="icon dropdown"></i>
+              <div class="menu">
+                <div data-value="1" class="item">1 份</div>
+                <div data-value="2" class="item">2 份</div>
+                <div data-value="3" class="item">3 份</div>
+                <div data-value="4" class="item">4 份</div>
+                <div data-value="5" class="item">5 份</div>
+                <div data-value="6" class="item">6 份</div>
+              </div>
+            </div>
+            <div class="ui icon labeled teal basic button">加入預約團購<i class="icon add"></i></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui pink segment"><a href="" class="ui label float right">生產日記<span class="number">farmer-product-date</span><i class="icon right arrow"></i></a>
+            <h2 class="ui header">空心菜<a class="ui circular label"><i class="icon food"></i></a></h2>
+            <div class="ui divider"></div>
+            <div class="ui image"><img src="http://a.blog.xuite.net/a/b/3/6/13809829/blog_122389/txt/6942769/1.jpg"/></div>
+            <div class="ui divided list">
+              <div class="item">
+                <div class="ui horizontal black label">農夫</div>張老闆
+              </div>
+              <div class="item">
+                <div class="ui horizontal black label">耕地</div>天龍國外星語言區 2 號地
+              </div>
+              <div class="item">
+                <div class="ui horizontal red label">預定收成</div>2015/2 (三週後)
+              </div>
+            </div>
+            <div class="ui divider"></div>
+            <p>每份<span class="price number">NT$ 50</span>元，剩餘<span class="amount number">100</span>份</p>
+            <div class="ui pink message">較少人訂貨，歡迎預購！</div>
+            <div class="ui selection simple dropdown">
+              <input name="份數" type="hidden"/>
+              <div class="default text">份數</div><i class="icon dropdown"></i>
+              <div class="menu">
+                <div data-value="1" class="item">1 份</div>
+                <div data-value="2" class="item">2 份</div>
+                <div data-value="3" class="item">3 份</div>
+                <div data-value="4" class="item">4 份</div>
+                <div data-value="5" class="item">5 份</div>
+                <div data-value="6" class="item">6 份</div>
+              </div>
+            </div>
+            <div class="ui icon labeled blue basic button">開啟預約團購<i class="icon asterisk"></i></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui segment"><a href="" class="ui label float right">生產日記<span class="number">farmer-product-date</span><i class="icon right arrow"></i></a>
+            <h2 class="ui header">玉米<a class="ui circular label"><i class="icon food"></i></a></h2>
+            <div class="ui divider"></div>
+            <div class="ui image"><img src="http://e.blog.xuite.net/e/5/c/b/11688571/blog_840904/txt/64699656/12.jpg"/></div>
+            <div class="ui divided list">
+              <div class="item">
+                <div class="ui horizontal black label">農夫</div>呂小華
+              </div>
+              <div class="item">
+                <div class="ui horizontal black label">耕地</div>天龍國外星語言區 3 號地
+              </div>
+              <div class="item">
+                <div class="ui horizontal red label">預定收成</div>2015/2 (三週後)
+              </div>
+            </div>
+            <div class="ui divider"></div>
+            <p>每份<span class="price number">NT$ 50</span>元，剩餘<span class="amount number">10</span>份</p>
+            <div class="ui selection simple dropdown">
+              <input name="份數" type="hidden"/>
+              <div class="default text">份數</div><i class="icon dropdown"></i>
+              <div class="menu">
+                <div data-value="1" class="item">1 份</div>
+                <div data-value="2" class="item">2 份</div>
+                <div data-value="3" class="item">3 份</div>
+                <div data-value="4" class="item">4 份</div>
+                <div data-value="5" class="item">5 份</div>
+                <div data-value="6" class="item">6 份</div>
+              </div>
+            </div>
+            <div class="ui icon labeled blue basic button">開啟預約團購<i class="icon asterisk"></i></div>
           </div>
         </div>
       </div>
@@ -79,6 +204,19 @@
         </div>
       </div>
     </footer>
-    <script>$("#topbar a[href*='book']").addClass("active");</script>
+    <script>
+      $("#topbar a[href*='book']").addClass("active");
+      $('#filter .pink.label').parent('.item').on('click tap', function(){
+        $('#list .column').hide();
+        $('#list .pink.segment').parent('.column').fadeIn();
+        $('#filter .item').removeClass('active');
+        $(this).addClass('active');
+      });
+      $('#filter .black.label').parent('.item').on('click tap', function(){
+        $('#list .column').fadeIn();
+        $('#filter .item').removeClass('active');
+        $(this).addClass('active');
+      });
+    </script>
   </body>
 </html>
