@@ -113,6 +113,13 @@ a, a:link {
 #content .header {
   margin: 0;
 }
+#content .header .label {
+  position: relative;
+  top: -0.17rem;
+}
+#content .header .label .icon {
+  margin: 0;
+}
 #content .number {
   margin: 0 0.5rem;
 }
