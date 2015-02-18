@@ -100,11 +100,21 @@ a, a:link {
   height: 6rem;
   float: left;
 }
+#content .image img {
+  max-width: 6rem;
+  max-height: 6rem;
+}
 #content .list {
-  margin-left: 8rem;
+  margin-left: 7rem;
 }
 #content .list .item:after {
   clear: none;
+}
+#content .header {
+  margin: 0;
+}
+#content .number {
+  margin: 0 0.5rem;
 }
 #content .price {
   font-size: 1.5em;
