@@ -3,42 +3,211 @@ extends level-one
 block head
 
 block title
-  | 預購 | 
+  | 馬上買 | 
 
 block content
 
   #content.page.wrapper
-    .ui.secondary.pointing.menu
-      a.item(href='') 穀麥
-        .ui.green.tiny.label 10
-      a.item(href='') 蔬菜
-        .ui.green.tiny.label 10
-      a.item(href='') 水果
-        .ui.green.tiny.label 10
-      a.item(href='') 肉類
-        .ui.green.tiny.label 10
-      a.item(href='') 水產
-        .ui.green.tiny.label 10
+    #filter.ui.secondary.pointing.menu
+      a.item 推薦
+        .ui.pink.tiny.label 10
+      a.active.item 全部
+        .ui.black.tiny.label 20
+      a.item 穀麥
+        .ui.black.tiny.label 3
+      a.item 蔬菜
+        .ui.black.tiny.label 7
+      a.item 水果
+        .ui.black.tiny.label 5
+      a.item 肉類
+        .ui.black.tiny.label 2
+      a.item 水產
+        .ui.black.tiny.label 3
       .right.menu
         .item
           .ui.icon.input.transparent
             input(placeholder="搜尋...",type="text")
             i.icon.search.link
 
-    .ui.two.column.stackable.grid
+    #list.ui.two.column.stackable.grid
+      .column
+        .ui.pink.segment
+          a.ui.label.float.right(href='') 生產日記
+            span.number farmer-product-date
+            i.icon.right.arrow
+          h2.ui.header 糙米
+            a.ui.circular.label
+              i.icon.food
+          .ui.divider
+          .ui.image
+            img(src='http://static.ettoday.net/images/173/d173736.jpg')
+          .ui.divided.list
+            .item
+              .ui.horizontal.black.label 農夫
+              | 高村長
+            .item
+              .ui.horizontal.black.label 耕地
+              | 新天龍國外星語言區 4 號地
+            .item
+              .ui.horizontal.red.label 預定收成
+              | 2015/2 (三週後)
+          .ui.divider
+          p 每份
+            span.price.number NT$ 50
+            | 元，剩餘
+            span.amount.number 100
+            | 份
+          .ui.pink.message 較少人訂貨，歡迎預購！
+          .ui.message 您的菜市正在預約團購！再 1 份可湊滿一箱
+          .ui.selection.simple.dropdown
+            input(name='份數',type='hidden')
+            .default.text 份數
+            i.icon.dropdown
+            .menu
+              .item(data-value='1') 1 份
+              .item(data-value='2') 2 份
+              .item(data-value='3') 3 份
+              .item(data-value='4') 4 份
+              .item(data-value='5') 5 份
+              .item(data-value='6') 6 份
+          .ui.icon.labeled.teal.basic.button 加入預約團購
+            i.icon.add
+      .column
+        .ui.black.segment
+          a.ui.label.float.right(href='') 生產日記
+            span.number farmer-product-date
+            i.icon.right.arrow
+          h2.ui.header 地瓜葉
+            a.ui.circular.label
+              i.icon.food
+          .ui.divider
+          .ui.image
+            img(src='http://blufiles.storage.live.com/y1pX6mVV-vrjX69KMOiG_aprByZhdmel-urs5zB0Wvx09gUQoSEU2yd2Ct_tLyWLuYYgWntakXWKCU')
+          .ui.divided.list
+            .item
+              .ui.horizontal.black.label 農夫
+              | 謝老闆
+            .item
+              .ui.horizontal.black.label 耕地
+              | 醫龍國外星語言區 1 號地
+            .item
+              .ui.horizontal.red.label 預定收成
+              | 2015/2 (三週後)
+          .ui.divider
+          p 每份
+            span.price.number NT$ 50
+            | 元，剩餘
+            span.amount.number 10
+            | 份
+          .ui.message 您的菜市正在預約團購！再 1 份可湊滿一箱
+          .ui.selection.simple.dropdown
+            input(name='份數',type='hidden')
+            .default.text 份數
+            i.icon.dropdown
+            .menu
+              .item(data-value='1') 1 份
+              .item(data-value='2') 2 份
+              .item(data-value='3') 3 份
+              .item(data-value='4') 4 份
+              .item(data-value='5') 5 份
+              .item(data-value='6') 6 份
+          .ui.icon.labeled.teal.basic.button 加入預約團購
+            i.icon.add
+      .column
+        .ui.pink.segment
+          a.ui.label.float.right(href='') 生產日記
+            span.number farmer-product-date
+            i.icon.right.arrow
+          h2.ui.header 空心菜
+            a.ui.circular.label
+              i.icon.food
+          .ui.divider
+          .ui.image
+            img(src='http://a.blog.xuite.net/a/b/3/6/13809829/blog_122389/txt/6942769/1.jpg')
+          .ui.divided.list
+            .item
+              .ui.horizontal.black.label 農夫
+              | 張老闆
+            .item
+              .ui.horizontal.black.label 耕地
+              | 天龍國外星語言區 2 號地
+            .item
+              .ui.horizontal.red.label 預定收成
+              | 2015/2 (三週後)
+          .ui.divider
+          p 每份
+            span.price.number NT$ 50
+            | 元，剩餘
+            span.amount.number 100
+            | 份
+          .ui.pink.message 較少人訂貨，歡迎預購！
+          .ui.selection.simple.dropdown
+            input(name='份數',type='hidden')
+            .default.text 份數
+            i.icon.dropdown
+            .menu
+              .item(data-value='1') 1 份
+              .item(data-value='2') 2 份
+              .item(data-value='3') 3 份
+              .item(data-value='4') 4 份
+              .item(data-value='5') 5 份
+              .item(data-value='6') 6 份
+          .ui.icon.labeled.blue.basic.button 開啟預約團購
+            i.icon.asterisk
       .column
         .ui.segment
-          .ui.green.top.attached.label 菜市團購中！再 1 份可湊滿一箱
-          span.float.right 可購買：10，湊箱中：8
-          .ui.header 地瓜葉
+          a.ui.label.float.right(href='') 生產日記
+            span.number farmer-product-date
+            i.icon.right.arrow
+          h2.ui.header 玉米
+            a.ui.circular.label
+              i.icon.food
+          .ui.divider
+          .ui.image
+            img(src='http://e.blog.xuite.net/e/5/c/b/11688571/blog_840904/txt/64699656/12.jpg')
           .ui.divided.list
-            .item 農夫：謝老闆
-            .item 耕地：天龍國外星語言區 1 號地
-            .item 收成日期：2015/1/1 (今天)
-            .item 每份售價：30 元
-          .ui.red.icon.labeled.button 放入菜籃
-            i.icon.cart
+            .item
+              .ui.horizontal.black.label 農夫
+              | 呂小華
+            .item
+              .ui.horizontal.black.label 耕地
+              | 天龍國外星語言區 3 號地
+            .item
+              .ui.horizontal.red.label 預定收成
+              | 2015/2 (三週後)
+          .ui.divider
+          p 每份
+            span.price.number NT$ 50
+            | 元，剩餘
+            span.amount.number 10
+            | 份
+          //-.ui.message 您的菜市正在預約團購！再 1 份可湊滿一箱
+          .ui.selection.simple.dropdown
+            input(name='份數',type='hidden')
+            .default.text 份數
+            i.icon.dropdown
+            .menu
+              .item(data-value='1') 1 份
+              .item(data-value='2') 2 份
+              .item(data-value='3') 3 份
+              .item(data-value='4') 4 份
+              .item(data-value='5') 5 份
+              .item(data-value='6') 6 份
+          //-span.text 總計 100 元
+          .ui.icon.labeled.blue.basic.button 開啟預約團購
+            i.icon.asterisk
 
 block script
   script.
     $("#topbar a[href*='book']").addClass("active");
+    $('#filter .pink.label').parent('.item').on('click tap', function(){
+      $('#list .column').hide();
+      $('#list .pink.segment').parent('.column').fadeIn();
+      $('#filter .item').removeClass('active');
+      $(this).addClass('active');
+    });
+    $('#filter .black.label').parent('.item').on('click tap', function(){
+      $('#list .column').fadeIn();
+      $('#filter .item').removeClass('active');
+      $(this).addClass('active');
+    });
