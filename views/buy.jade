@@ -8,26 +8,70 @@ block title
 block content
 
   #content.page.wrapper
-    .ui.secondary.pointing.menu
-      a.item(href='') 需要支持
+    #filter.ui.secondary.pointing.menu
+      a.item 需要支持
         .ui.yellow.tiny.label 10
-      a.item(href='') 穀麥
-        .ui.teal.tiny.label 10
-      a.item(href='') 蔬菜
-        .ui.teal.tiny.label 10
-      a.item(href='') 水果
-        .ui.teal.tiny.label 10
-      a.item(href='') 肉類
-        .ui.teal.tiny.label 10
-      a.item(href='') 水產
-        .ui.teal.tiny.label 10
+      a.active.item 全部
+        .ui.teal.tiny.label 20
+      a.item 穀麥
+        .ui.teal.tiny.label 3
+      a.item 蔬菜
+        .ui.teal.tiny.label 7
+      a.item 水果
+        .ui.teal.tiny.label 5
+      a.item 肉類
+        .ui.teal.tiny.label 2
+      a.item 水產
+        .ui.teal.tiny.label 3
       .right.menu
         .item
           .ui.icon.input.transparent
             input(placeholder="搜尋...",type="text")
             i.icon.search.link
 
-    .ui.two.column.stackable.grid
+    #list.ui.two.column.stackable.grid
+      .column
+        .ui.yellow.segment
+          a.ui.label.float.right(href='') 生產日記
+            span.number farmer-product-date
+            i.icon.right.arrow
+          h2.ui.header 糙米
+            a.ui.circular.label
+              i.icon.food
+          .ui.divider
+          .ui.image
+            img(src='http://static.ettoday.net/images/173/d173736.jpg')
+          .ui.divided.list
+            .item
+              .ui.horizontal.black.label 農夫
+              | 高村長
+            .item
+              .ui.horizontal.black.label 耕地
+              | 新天龍國外星語言區 4 號地
+            .item
+              .ui.horizontal.black.label 收成
+              | 2015/1/1 (今天)
+          .ui.divider
+          p 每份
+            span.price.number NT$ 50
+            | 元，剩餘
+            span.amount.number 10
+            | 份
+          .ui.yellow.message 滯銷中，請多多支持！
+          .ui.teal.message 菜市團購中！再 1 份可湊滿一箱
+          .ui.selection.simple.dropdown
+            input(name='份數',type='hidden')
+            .default.text 份數
+            i.icon.dropdown
+            .menu
+              .item(data-value='1') 1 份
+              .item(data-value='2') 2 份
+              .item(data-value='3') 3 份
+              .item(data-value='4') 4 份
+              .item(data-value='5') 5 份
+              .item(data-value='6') 6 份
+          .ui.icon.labeled.teal.button 加入團購
+            i.icon.add
       .column
         .ui.teal.segment
           a.ui.label.float.right(href='') 生產日記
@@ -45,7 +89,7 @@ block content
               | 謝老闆
             .item
               .ui.horizontal.black.label 耕地
-              | 天龍國外星語言區 1 號地
+              | 醫龍國外星語言區 1 號地
             .item
               .ui.horizontal.black.label 收成
               | 2015/1/1 (今天)
@@ -156,3 +200,14 @@ block content
 block script
   script.
     $("#topbar a[href*='buy']").addClass("active");
+    $('#filter .yellow.label').parent('.item').on('click tap', function(){
+      $('#list .column').hide();
+      $('#list .yellow.segment').parent('.column').fadeIn();
+      $('#filter .item').removeClass('active');
+      $(this).addClass('active');
+    });
+    $('#filter .teal.label').parent('.item').on('click tap', function(){
+      $('#list .column').fadeIn();
+      $('#filter .item').removeClass('active');
+      $(this).addClass('active');
+    });
