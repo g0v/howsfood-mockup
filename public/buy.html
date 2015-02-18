@@ -43,13 +43,14 @@
       </div>
     </nav>
     <div id="content" class="page wrapper">
-      <div class="ui secondary pointing menu"><a href="" class="item">需要支持
-          <div class="ui yellow tiny label">10</div></a><a href="" class="item">穀麥
-          <div class="ui teal tiny label">10</div></a><a href="" class="item">蔬菜
-          <div class="ui teal tiny label">10</div></a><a href="" class="item">水果
-          <div class="ui teal tiny label">10</div></a><a href="" class="item">肉類
-          <div class="ui teal tiny label">10</div></a><a href="" class="item">水產
-          <div class="ui teal tiny label">10</div></a>
+      <div id="filter" class="ui secondary pointing menu"><a class="item">需要支持
+          <div class="ui yellow tiny label">10</div></a><a class="active item">全部
+          <div class="ui teal tiny label">20</div></a><a class="item">穀麥
+          <div class="ui teal tiny label">3</div></a><a class="item">蔬菜
+          <div class="ui teal tiny label">7</div></a><a class="item">水果
+          <div class="ui teal tiny label">5</div></a><a class="item">肉類
+          <div class="ui teal tiny label">2</div></a><a class="item">水產
+          <div class="ui teal tiny label">3</div></a>
         <div class="right menu">
           <div class="item">
             <div class="ui icon input transparent">
@@ -58,7 +59,42 @@
           </div>
         </div>
       </div>
-      <div class="ui two column stackable grid">
+      <div id="list" class="ui two column stackable grid">
+        <div class="column">
+          <div class="ui yellow segment"><a href="" class="ui label float right">生產日記<span class="number">farmer-product-date</span><i class="icon right arrow"></i></a>
+            <h2 class="ui header">糙米<a class="ui circular label"><i class="icon food"></i></a></h2>
+            <div class="ui divider"></div>
+            <div class="ui image"><img src="http://static.ettoday.net/images/173/d173736.jpg"/></div>
+            <div class="ui divided list">
+              <div class="item">
+                <div class="ui horizontal black label">農夫</div>高村長
+              </div>
+              <div class="item">
+                <div class="ui horizontal black label">耕地</div>新天龍國外星語言區 4 號地
+              </div>
+              <div class="item">
+                <div class="ui horizontal black label">收成</div>2015/1/1 (今天)
+              </div>
+            </div>
+            <div class="ui divider"></div>
+            <p>每份<span class="price number">NT$ 50</span>元，剩餘<span class="amount number">10</span>份</p>
+            <div class="ui yellow message">滯銷中，請多多支持！</div>
+            <div class="ui teal message">菜市團購中！再 1 份可湊滿一箱</div>
+            <div class="ui selection simple dropdown">
+              <input name="份數" type="hidden"/>
+              <div class="default text">份數</div><i class="icon dropdown"></i>
+              <div class="menu">
+                <div data-value="1" class="item">1 份</div>
+                <div data-value="2" class="item">2 份</div>
+                <div data-value="3" class="item">3 份</div>
+                <div data-value="4" class="item">4 份</div>
+                <div data-value="5" class="item">5 份</div>
+                <div data-value="6" class="item">6 份</div>
+              </div>
+            </div>
+            <div class="ui icon labeled teal button">加入團購<i class="icon add"></i></div>
+          </div>
+        </div>
         <div class="column">
           <div class="ui teal segment"><a href="" class="ui label float right">生產日記<span class="number">farmer-product-date</span><i class="icon right arrow"></i></a>
             <h2 class="ui header">地瓜葉<a class="ui circular label"><i class="icon food"></i></a></h2>
@@ -69,7 +105,7 @@
                 <div class="ui horizontal black label">農夫</div>謝老闆
               </div>
               <div class="item">
-                <div class="ui horizontal black label">耕地</div>天龍國外星語言區 1 號地
+                <div class="ui horizontal black label">耕地</div>醫龍國外星語言區 1 號地
               </div>
               <div class="item">
                 <div class="ui horizontal black label">收成</div>2015/1/1 (今天)
@@ -168,6 +204,19 @@
         </div>
       </div>
     </footer>
-    <script>$("#topbar a[href*='buy']").addClass("active");</script>
+    <script>
+      $("#topbar a[href*='buy']").addClass("active");
+      $('#filter .yellow.label').parent('.item').on('click tap', function(){
+        $('#list .column').hide();
+        $('#list .yellow.segment').parent('.column').fadeIn();
+        $('#filter .item').removeClass('active');
+        $(this).addClass('active');
+      });
+      $('#filter .teal.label').parent('.item').on('click tap', function(){
+        $('#list .column').fadeIn();
+        $('#filter .item').removeClass('active');
+        $(this).addClass('active');
+      });
+    </script>
   </body>
 </html>
