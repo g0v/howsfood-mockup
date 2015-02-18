@@ -27,23 +27,31 @@ block content
 
     .ui.two.column.stackable.grid
       .column
-        .ui.segment
-          .ui.green.top.attached.label 菜市團購中！再 1 份可湊滿一箱
-          span.float.right 可購買：10，湊箱中：8
-          .ui.header 地瓜葉
+        .ui.green.segment
+          //-.ui.green.top.attached.label 商品編號 hlb-ooooo-20150101
+          //-span.float.right 剩餘數量 10
+          h2.ui.header 地瓜葉
+            .ui.label.float.right 商品編號 hlb-ooooo-20150101
+          .ui.divider
+          .ui.image
+            img(src='http://blufiles.storage.live.com/y1pX6mVV-vrjX69KMOiG_aprByZhdmel-urs5zB0Wvx09gUQoSEU2yd2Ct_tLyWLuYYgWntakXWKCU')
           .ui.divided.list
             .item
-              .ui.label 農夫
+              .ui.horizontal.black.label 農夫
               | 謝老闆
             .item
-              .ui.label 耕地
+              .ui.horizontal.black.label 耕地
               | 天龍國外星語言區 1 號地
             .item
-              .ui.label 收成
+              .ui.horizontal.black.label 收成
               | 2015/1/1 (今天)
-            .item
-              .ui.label 每份
-              | 50 元
+          .ui.divider
+          p 每份 
+            span.price 50
+            |  元，剩餘 
+            span.amount 10
+            |  份
+          .ui.green.message 菜市團購中！再 1 份可湊滿一箱
           .ui.selection.simple.dropdown
             input(name='份數',type='hidden')
             .default.text 份數
@@ -55,10 +63,9 @@ block content
               .item(data-value='4') 4 份
               .item(data-value='5') 5 份
               .item(data-value='6') 6 份
-          span.text 總計 100 元
-          .ui.red.icon.labeled.button 加入團購
+          //-span.text 總計 100 元
+          .ui.blue.icon.labeled.button 加入團購
             i.icon.add
-          .ui.green.message 菜市團購中！再 1 份可湊滿一箱
 
 block script
   script.

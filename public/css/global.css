@@ -2,9 +2,6 @@
 html {
   font-family: "Noto Sans", "Noto Sans T Chinese", "微軟正黑體", sans-serif;
   color: #333333;
-}
-
-html, body, div, nav, section, article, header, footer, h1, h2, h3, h4, p {
   font-size: 20px;
 }
 
@@ -40,6 +37,10 @@ a, a:link {
 
 .float.right {
   float: right;
+}
+
+.float.left {
+  float: left;
 }
 
 .align.center {
@@ -94,8 +95,24 @@ a, a:link {
 #content {
   padding: 3rem 0;
 }
-#content .item .ui.label {
-  margin-right: 1em;
+#content .image {
+  width: 6rem;
+  height: 6rem;
+  float: left;
+}
+#content .list {
+  margin-left: 8rem;
+}
+#content .list .item:after {
+  clear: none;
+}
+#content .price {
+  font-size: 1.5em;
+  color: blue;
+}
+#content .amount {
+  font-size: 1.2em;
+  color: green;
 }
 
 #bottombar {
