@@ -131,6 +131,9 @@ a, a:link {
   font-size: 1.2em;
   color: green;
 }
+#content .dropdown {
+  z-index: 20;
+}
 
 #bottombar {
   background-color: #333333;
