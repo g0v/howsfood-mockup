@@ -17,9 +17,9 @@
     <link rel="stylesheet" type="text/css" href="assets/semantic-ui/1.9.0/semantic.min.css"/>
     <script type="text/javascript" src="assets/semantic-ui/1.9.0/semantic.min.js"></script>
     <!-- handlebars-->
-    <script type="text/javascript" src="assets/handlebars-v2.0.0.js"></script>
+    <!--script(type="text/javascript",src="assets/handlebars-v2.0.0.js")-->
     <!-- underscore-->
-    <script type="text/javascript" src="assets/underscore-min.js"></script>
+    <!--script(type="text/javascript",src="assets/underscore-min.js")-->
     <!-- csv parser-->
     <!-- script(type="text/javascript",src="assets/csv.js")-->
     <!-- custom-->
@@ -57,8 +57,8 @@
       </div>
       <div id="list" class="ui two column stackable grid">
         <div class="column">
-          <div class="ui pink segment product"><a href="" class="ui label float right">生產日記<span class="number">#farmer-product-date</span><i class="icon right arrow"></i></a>
-            <h2 class="ui header">糙米<a href="receipt" class="ui circular label"><i class="icon food"></i></a></h2>
+          <div class="ui purple segment product"><a href="diary" class="ui label float right">生產日記<span class="number">#farmer-product-date</span><i class="icon right arrow"></i></a>
+            <h2 class="ui header">糙米<a href="food" class="ui circular label"><i class="icon food"></i></a></h2>
             <div class="ui pink message">較少人訂貨，歡迎預購！</div>
             <div class="ui image"><img src="http://static.ettoday.net/images/173/d173736.jpg"/></div>
             <div class="ui divided list">
@@ -92,8 +92,8 @@
           </div>
         </div>
         <div class="column">
-          <div class="ui purple segment product"><a href="" class="ui label float right">生產日記<span class="number">#farmer-product-date</span><i class="icon right arrow"></i></a>
-            <h2 class="ui header">地瓜葉<a href="receipt" class="ui circular label"><i class="icon food"></i></a></h2>
+          <div class="ui purple segment product"><a href="diary" class="ui label float right">生產日記<span class="number">#farmer-product-date</span><i class="icon right arrow"></i></a>
+            <h2 class="ui header">地瓜葉<a href="food" class="ui circular label"><i class="icon food"></i></a></h2>
             <div class="ui image"><img src="http://blufiles.storage.live.com/y1pX6mVV-vrjX69KMOiG_aprByZhdmel-urs5zB0Wvx09gUQoSEU2yd2Ct_tLyWLuYYgWntakXWKCU"/></div>
             <div class="ui divided list">
               <div class="item">
@@ -126,8 +126,8 @@
           </div>
         </div>
         <div class="column">
-          <div class="ui pink segment product"><a href="" class="ui label float right">生產日記<span class="number">#farmer-product-date</span><i class="icon right arrow"></i></a>
-            <h2 class="ui header">空心菜<a href="receipt" class="ui circular label"><i class="icon food"></i></a></h2>
+          <div class="ui segment product"><a href="diary" class="ui label float right">生產日記<span class="number">#farmer-product-date</span><i class="icon right arrow"></i></a>
+            <h2 class="ui header">空心菜<a href="food" class="ui circular label"><i class="icon food"></i></a></h2>
             <div class="ui pink message">較少人訂貨，歡迎預購！</div>
             <div class="ui image"><img src="http://a.blog.xuite.net/a/b/3/6/13809829/blog_122389/txt/6942769/1.jpg"/></div>
             <div class="ui divided list">
@@ -160,8 +160,8 @@
           </div>
         </div>
         <div class="column">
-          <div class="ui segment product"><a href="" class="ui label float right">生產日記<span class="number">#farmer-product-date</span><i class="icon right arrow"></i></a>
-            <h2 class="ui header">玉米<a href="receipt" class="ui circular label"><i class="icon food"></i></a></h2>
+          <div class="ui segment product"><a href="diary" class="ui label float right">生產日記<span class="number">#farmer-product-date</span><i class="icon right arrow"></i></a>
+            <h2 class="ui header">玉米<a href="food" class="ui circular label"><i class="icon food"></i></a></h2>
             <div class="ui image"><img src="http://e.blog.xuite.net/e/5/c/b/11688571/blog_840904/txt/64699656/12.jpg"/></div>
             <div class="ui divided list">
               <div class="item">
@@ -201,24 +201,23 @@
       </div>
     </footer>
     <script>
+      // for buy and book
+      ['yellow', 'teal', 'pink', 'purple'].forEach(function(color, index, array){
+        $('#filter .'+ color +'.label').parent('.item').on('click tap', function(){
+          $('#list .column').hide();
+          $('#list .'+ color +'.message').parents('.column').fadeIn();
+        });
+      });
+      $('#filter .all').on('click tap', function(){
+        $('#list .column').fadeIn();
+      });
+      // for all pages
       $('#filter .item').on('click tap', function(){
         $('#filter .item').removeClass('active');
         $(this).addClass('active');
       });
     </script>
     <script>
-      $('#filter .pink.label').parent('.item').on('click tap', function(){
-        $('#list .column').hide();
-        $('#list .pink.segment').parent('.column').fadeIn();
-      });
-      $('#filter .purple.label').parent('.item').on('click tap', function(){
-        $('#list .column').hide();
-        $('#list .purple.message').parents('.column').fadeIn();
-      });
-      $('#filter .all').on('click tap', function(){
-        $('#list .column').fadeIn();
-      });
-      
       $("#topbar a[href*='book']").addClass("active");
       $('#filter .purple.label').parent('.item').click();
     </script>

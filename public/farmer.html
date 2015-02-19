@@ -17,9 +17,9 @@
     <link rel="stylesheet" type="text/css" href="assets/semantic-ui/1.9.0/semantic.min.css"/>
     <script type="text/javascript" src="assets/semantic-ui/1.9.0/semantic.min.js"></script>
     <!-- handlebars-->
-    <script type="text/javascript" src="assets/handlebars-v2.0.0.js"></script>
+    <!--script(type="text/javascript",src="assets/handlebars-v2.0.0.js")-->
     <!-- underscore-->
-    <script type="text/javascript" src="assets/underscore-min.js"></script>
+    <!--script(type="text/javascript",src="assets/underscore-min.js")-->
     <!-- csv parser-->
     <!-- script(type="text/javascript",src="assets/csv.js")-->
     <!-- custom-->
@@ -66,6 +66,17 @@
       </div>
     </footer>
     <script>
+      // for buy and book
+      ['yellow', 'teal', 'pink', 'purple'].forEach(function(color, index, array){
+        $('#filter .'+ color +'.label').parent('.item').on('click tap', function(){
+          $('#list .column').hide();
+          $('#list .'+ color +'.message').parents('.column').fadeIn();
+        });
+      });
+      $('#filter .all').on('click tap', function(){
+        $('#list .column').fadeIn();
+      });
+      // for all pages
       $('#filter .item').on('click tap', function(){
         $('#filter .item').removeClass('active');
         $(this).addClass('active');

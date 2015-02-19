@@ -27,7 +27,7 @@
     <script type="text/javascript" src="js/global.js"></script>
     <!-- for mobile, responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>料理指南 | 好食市集</title>
+    <title>生產日記 #farmer-product-date | 好食市集</title>
   </head>
   <body>
     <nav id="topbar">
@@ -43,36 +43,7 @@
         </div>
       </div>
     </nav>
-    <div id="content" class="page wrapper">
-      <div id="filter" class="ui secondary pointing menu"><a class="item">上週食材
-          <div class="ui tiny label">10</div></a><a class="item">本週食材
-          <div class="ui green tiny label">10</div></a><a class="item">我的最愛
-          <div class="ui yellow tiny label">10</div></a><a class="item">穀麥</a><a class="item">蔬菜</a><a class="item">水果</a><a class="item">肉類</a><a class="item">水產</a>
-        <div class="right menu">
-          <div class="item">
-            <div class="ui icon input transparent">
-              <input placeholder="搜尋..." type="text"/><i class="icon search link"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="tag"><a class="ui tag label">地瓜葉
-          <div class="detail">10</div></a><a class="ui tag label">糙米
-          <div class="detail">10</div></a><a class="ui tag label">空心菜
-          <div class="detail">10</div></a><a class="ui tag label">玉米
-          <div class="detail">10</div></a></div>
-      <div class="ui divider"></div>
-      <div id="list" class="ui two column stackable grid">
-        <div class="column">
-          <div class="ui list">
-            <div class="item">地瓜葉</div>
-            <div class="item">地瓜葉</div>
-            <div class="item">地瓜葉</div>
-            <div class="item">地瓜葉</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="content" class="page wrapper"></div>
     <footer id="bottombar">
       <div class="ui borderless menu bar inverted"><a href="" class="item"><i class="icon info"></i>關於本計畫</a><a href="" class="item"><i class="icon github"></i>關於本站</a>
         <div class="right menu"><a target="_blank" href="" class="ui button item">好食機<i class="icon forward mail"></i></a><a target="_blank" href="" class="ui button item">愛樂活<i class="icon forward mail"></i></a><a target="_blank" href="" class="ui button item">g0v<i class="icon forward mail"></i></a>
@@ -96,9 +67,6 @@
         $(this).addClass('active');
       });
     </script>
-    <script>
-      $("#topbar a[href*='food']").addClass("active");
-      $('#filter .green.label').parent('.item').click();
-    </script>
+    <script>$("#topbar a[href*='farmer']").addClass("active");</script>
   </body>
 </html>
