@@ -11,18 +11,13 @@ block content
     #filter.ui.secondary.pointing.menu
       a.item 推薦
         .ui.pink.tiny.label 10
-      a.active.item 全部
-        .ui.black.tiny.label 20
+      a.active.item 團購中
+        .ui.purple.tiny.label 20
       a.item 穀麥
-        .ui.black.tiny.label 3
       a.item 蔬菜
-        .ui.black.tiny.label 7
       a.item 水果
-        .ui.black.tiny.label 5
       a.item 肉類
-        .ui.black.tiny.label 2
       a.item 水產
-        .ui.black.tiny.label 3
       .right.menu
         .item
           .ui.icon.input.transparent
@@ -61,7 +56,7 @@ block content
             | 元，剩餘
             span.amount.number 100
             | 份（每份 200 公克）
-          .ui.message 您的菜市正在預約團購！再 1 份可湊滿一箱
+          .ui.purple.message 您的菜市正在預約團購！再 1 份可湊滿一箱
           .ui.selection.simple.dropdown
             input(name='份數',type='hidden')
             .default.text 份數
@@ -73,10 +68,10 @@ block content
               .item(data-value='4') 4 份
               .item(data-value='5') 5 份
               .item(data-value='6') 6 份
-          .ui.icon.labeled.teal.basic.button 加入預約團購
+          .ui.icon.labeled.purple.basic.button 加入預約團購
             i.icon.add
       .column
-        .ui.black.segment
+        .ui.purple.segment
           a.ui.label.float.right(href='') 生產日記
             span.number farmer-product-date
             i.icon.right.arrow
@@ -105,7 +100,7 @@ block content
             | 元，剩餘
             span.amount.number 10
             | 份（每份 200 公克）
-          .ui.message 您的菜市正在預約團購！再 1 份可湊滿一箱
+          .ui.purple.message 您的菜市正在預約團購！再 1 份可湊滿一箱
           .ui.selection.simple.dropdown
             input(name='份數',type='hidden')
             .default.text 份數
@@ -117,7 +112,7 @@ block content
               .item(data-value='4') 4 份
               .item(data-value='5') 5 份
               .item(data-value='6') 6 份
-          .ui.icon.labeled.teal.basic.button 加入預約團購
+          .ui.icon.labeled.purple.basic.button 加入預約團購
             i.icon.add
       .column
         .ui.pink.segment
@@ -161,7 +156,7 @@ block content
               .item(data-value='4') 4 份
               .item(data-value='5') 5 份
               .item(data-value='6') 6 份
-          .ui.icon.labeled.blue.basic.button 開啟預約團購
+          .ui.icon.labeled.black.basic.button 開啟預約團購
             i.icon.asterisk
       .column
         .ui.segment
@@ -193,7 +188,7 @@ block content
             | 元，剩餘
             span.amount.number 10
             | 份（每份 200 公克）
-          //-.ui.message 您的菜市正在預約團購！再 1 份可湊滿一箱
+          //-.ui.purple.message 您的菜市正在預約團購！再 1 份可湊滿一箱
           .ui.selection.simple.dropdown
             input(name='份數',type='hidden')
             .default.text 份數
@@ -206,7 +201,7 @@ block content
               .item(data-value='5') 5 份
               .item(data-value='6') 6 份
           //-span.text 總計 100 元
-          .ui.icon.labeled.blue.basic.button 開啟預約團購
+          .ui.icon.labeled.black.basic.button 開啟預約團購
             i.icon.asterisk
 
 block script
