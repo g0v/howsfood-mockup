@@ -27,7 +27,7 @@
     <script type="text/javascript" src="js/global.js"></script>
     <!-- for mobile, responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>地瓜葉 | 好食市集</title>
+    <title>料理指南 | 好食市集</title>
   </head>
   <body>
     <nav id="topbar">
@@ -43,12 +43,21 @@
         </div>
       </div>
     </nav>
-    <div id="content" class="page wrapper"><a href="food" class="ui button">回食材列表</a>
-      <h2 class="ui header">地瓜葉</h2>
-      <h3>保存方式</h3>
-      <h3>賞味期限</h3>
-      <h3>食譜</h3>
-      <p>接 icook / dodocook</p>
+    <div id="content" class="page wrapper">
+      <div id="filter" class="ui secondary pointing menu"><a class="item">我訂過
+          <div class="ui tiny label">10</div></a><a class="item">我的菜市訂過
+          <div class="ui tiny label">10</div></a><a class="item">北部</a><a class="item">中部</a><a class="item">南部</a><a class="item">花東</a>
+        <div class="right menu">
+          <div class="item">
+            <div class="ui icon input transparent">
+              <input placeholder="搜尋..." type="text"/><i class="icon search link"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="list" class="ui two column stackable grid">
+        <div class="column"></div>
+      </div>
     </div>
     <footer id="bottombar">
       <div class="ui borderless menu bar inverted"><a href="" class="item"><i class="icon info"></i>關於本計畫</a><a href="" class="item"><i class="icon github"></i>關於本站</a>
@@ -62,6 +71,9 @@
         $(this).addClass('active');
       });
     </script>
-    <script>$("#topbar a[href*='food']").addClass("active");</script>
+    <script>
+      $("#topbar a[href*='farmer']").addClass("active");
+      $('#filter .green.label').parent('.item').click();
+    </script>
   </body>
 </html>
