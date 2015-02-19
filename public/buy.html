@@ -57,10 +57,9 @@
       </div>
       <div id="list" class="ui two column stackable grid">
         <div class="column">
-          <div class="ui yellow segment product">
-            <div class="ui yellow message">較少人訂貨，請多多支持！</div><a href="" class="ui label float right">生產日記<span class="number">#farmer-product-date</span><i class="icon right arrow"></i></a>
+          <div class="ui teal segment product"><a href="" class="ui label float right">生產日記<span class="number">#farmer-product-date</span><i class="icon right arrow"></i></a>
             <h2 class="ui header">糙米<a href="receipt" class="ui circular label"><i class="icon food"></i></a></h2>
-            <div class="ui divider"></div>
+            <div class="ui yellow message">較少人訂貨，請多多支持！</div>
             <div class="ui image"><img src="http://static.ettoday.net/images/173/d173736.jpg"/></div>
             <div class="ui divided list">
               <div class="item">
@@ -95,7 +94,6 @@
         <div class="column">
           <div class="ui teal segment product"><a href="" class="ui label float right">生產日記<span class="number">#farmer-product-date</span><i class="icon right arrow"></i></a>
             <h2 class="ui header">地瓜葉<a href="receipt" class="ui circular label"><i class="icon food"></i></a></h2>
-            <div class="ui divider"></div>
             <div class="ui image"><img src="http://blufiles.storage.live.com/y1pX6mVV-vrjX69KMOiG_aprByZhdmel-urs5zB0Wvx09gUQoSEU2yd2Ct_tLyWLuYYgWntakXWKCU"/></div>
             <div class="ui divided list">
               <div class="item">
@@ -128,10 +126,9 @@
           </div>
         </div>
         <div class="column">
-          <div class="ui yellow segment product">
-            <div class="ui yellow message">較少人訂貨，請多多支持！</div><a href="" class="ui label float right">生產日記<span class="number">#farmer-product-date</span><i class="icon right arrow"></i></a>
+          <div class="ui segment product"><a href="" class="ui label float right">生產日記<span class="number">#farmer-product-date</span><i class="icon right arrow"></i></a>
             <h2 class="ui header">空心菜<a href="receipt" class="ui circular label"><i class="icon food"></i></a></h2>
-            <div class="ui divider"></div>
+            <div class="ui yellow message">較少人訂貨，請多多支持！</div>
             <div class="ui image"><img src="http://a.blog.xuite.net/a/b/3/6/13809829/blog_122389/txt/6942769/1.jpg"/></div>
             <div class="ui divided list">
               <div class="item">
@@ -165,7 +162,6 @@
         <div class="column">
           <div class="ui segment product"><a href="" class="ui label float right">生產日記<span class="number">#farmer-product-date</span><i class="icon right arrow"></i></a>
             <h2 class="ui header">玉米<a href="receipt" class="ui circular label"><i class="icon food"></i></a></h2>
-            <div class="ui divider"></div>
             <div class="ui image"><img src="http://e.blog.xuite.net/e/5/c/b/11688571/blog_840904/txt/64699656/12.jpg"/></div>
             <div class="ui divided list">
               <div class="item">
@@ -213,7 +209,7 @@
     <script>
       $('#filter .yellow.label').parent('.item').on('click tap', function(){
         $('#list .column').hide();
-        $('#list .yellow.segment').parent('.column').fadeIn();
+        $('#list .yellow.message').parents('.column').fadeIn();
       });
       $('#filter .teal.label').parent('.item').on('click tap', function(){
         $('#list .column').hide();
