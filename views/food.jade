@@ -9,11 +9,12 @@ block content
 
   #content.page.wrapper
     #filter.ui.secondary.pointing.menu
+      a.item 上週食材
+        .ui.tiny.label 10
       a.item 本週食材
         .ui.green.tiny.label 10
       a.item 我的最愛
         .ui.yellow.tiny.label 10
-      a.active.item 全部
       a.item 穀麥
       a.item 蔬菜
       a.item 水果
@@ -30,4 +31,11 @@ block content
 
 block script
   script.
+
+    $('#filter .item').on('click tap', function(){
+      $('#filter .item').removeClass('active');
+      $(this).addClass('active');
+    });
+
     $("#topbar a[href*='food']").addClass("active");
+    $('#filter .green.label').parent('.item').click();
