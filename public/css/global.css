@@ -95,44 +95,34 @@ a, a:link {
 #content {
   padding: 3rem 0 5rem 0;
 }
-#content .image {
-  width: 6rem;
-  float: left;
+#content .product .right.label .icon {
+  margin: 0 0 0 0.5em;
 }
-#content .image img {
-  max-height: 6rem;
-}
-#content .list {
-  margin-left: 7rem;
-}
-#content .list .item:after {
-  clear: none;
-}
-#content .header {
+#content .product .header {
   margin: 0;
 }
-#content .header .label {
+#content .product .header .label {
   position: relative;
   top: -0.17rem;
 }
-#content .header .label .icon {
+#content .product .header .label .icon {
   margin: 0;
 }
-#content .number {
+#content .product .number {
   margin: 0 0.5rem;
 }
-#content .price {
+#content .product .price {
   font-size: 1.5em;
   color: blue;
 }
-#content .amount {
+#content .product .amount {
   font-size: 1.2em;
   color: green;
 }
-#content .dropdown {
+#content .product .dropdown {
   z-index: 5;
 }
-#content .dropdown .menu {
+#content .product .dropdown .menu {
   margin-bottom: 3rem;
 }
 
