@@ -98,6 +98,10 @@ a, a:link {
 #content .product .right.label .icon {
   margin: 0 0 0 0.5em;
 }
+#content .product .image {
+  height: 10rem;
+  overflow: hidden;
+}
 #content .product .header {
   margin: 0;
 }
