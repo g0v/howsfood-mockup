@@ -27,11 +27,11 @@ block content
     #list.ui.two.column.stackable.grid
       .column
         .ui.teal.segment.product
-          a.ui.label.float.right(href='') 生產日記
+          a.ui.label.float.right(href='diary') 生產日記
             span.number #farmer-product-date
             i.icon.right.arrow
           h2.ui.header 糙米
-            a.ui.circular.label(href='receipt')
+            a.ui.circular.label(href='food')
               i.icon.food
           .ui.yellow.message 較少人訂貨，請多多支持！
           .ui.image
@@ -71,11 +71,11 @@ block content
             i.icon.add
       .column
         .ui.teal.segment.product
-          a.ui.label.float.right(href='') 生產日記
+          a.ui.label.float.right(href='diary') 生產日記
             span.number #farmer-product-date
             i.icon.right.arrow
           h2.ui.header 地瓜葉
-            a.ui.circular.label(href='receipt')
+            a.ui.circular.label(href='food')
               i.icon.food
           .ui.image
             img(src='http://blufiles.storage.live.com/y1pX6mVV-vrjX69KMOiG_aprByZhdmel-urs5zB0Wvx09gUQoSEU2yd2Ct_tLyWLuYYgWntakXWKCU')
@@ -114,11 +114,11 @@ block content
             i.icon.add
       .column
         .ui.segment.product
-          a.ui.label.float.right(href='') 生產日記
+          a.ui.label.float.right(href='diary') 生產日記
             span.number #farmer-product-date
             i.icon.right.arrow
           h2.ui.header 空心菜
-            a.ui.circular.label(href='receipt')
+            a.ui.circular.label(href='food')
               i.icon.food
           .ui.yellow.message 較少人訂貨，請多多支持！
           .ui.image
@@ -157,11 +157,11 @@ block content
             i.icon.asterisk
       .column
         .ui.segment.product
-          a.ui.label.float.right(href='') 生產日記
+          a.ui.label.float.right(href='diary') 生產日記
             span.number #farmer-product-date
             i.icon.right.arrow
           h2.ui.header 玉米
-            a.ui.circular.label(href='receipt')
+            a.ui.circular.label(href='food')
               i.icon.food
           .ui.image
             img(src='http://e.blog.xuite.net/e/5/c/b/11688571/blog_840904/txt/64699656/12.jpg')
@@ -202,17 +202,5 @@ block content
 
 block script
   script.
-    $('#filter .yellow.label').parent('.item').on('click tap', function(){
-      $('#list .column').hide();
-      $('#list .yellow.message').parents('.column').fadeIn();
-    });
-    $('#filter .teal.label').parent('.item').on('click tap', function(){
-      $('#list .column').hide();
-      $('#list .teal.message').parents('.column').fadeIn();
-    });
-    $('#filter .all').on('click tap', function(){
-      $('#list .column').fadeIn();
-    });
-
     $("#topbar a[href*='buy']").addClass("active");
     $('#filter .teal.label').parent('.item').click();
