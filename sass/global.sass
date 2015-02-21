@@ -74,6 +74,11 @@ a, a:link
       //-margin: -1rem 0.5rem -0.1rem 0
       display: inline
 
+.dropdown
+  z-index: 5
+  .menu
+    margin-bottom: 3rem
+
 #content
   padding: 3rem 0 5rem 0
   .product
@@ -107,10 +112,6 @@ a, a:link
     .amount
       font-size: 1.2em
       color: green
-    .dropdown
-      z-index: 5
-      .menu
-        margin-bottom: 3rem
   .receipt
     .image
       max-height: 10rem
@@ -141,7 +142,6 @@ a, a:link
 #header
   height: 10rem
   margin-top: 2.6rem
-  margin-bottom: 1rem
   position: relative
   +background(image-url("http://static.ettoday.net/images/173/d173736.jpg") repeat-x center bottom, rgba(#666,1))
   .background
@@ -164,22 +164,29 @@ a, a:link
         margin: 3rem 0 1rem 1rem
         font-size: 3rem
         letter-spacing: 0.3em
+
+#action
+  background-color: #fff
+  padding: 1rem
+  margin-bottom: 1rem
+  .item
+    .key
+      float: left
+    .value
+      margin-left: 4rem
+      padding-top: 0.3em
+
 #meta
   padding-bottom: 4rem
   .image
     .top.label
       background-color: rgba(#000, 0.5)
       color: #fff
-  .text
-    .item
-      .key
-        float: left
-      .value
-        margin-left: 4rem
-        padding-top: 0.3em
   .label
     .icon:last-child
       margin: 0 0 0 0.75em
+    .icon:first-child
+      margin: 0 0.75em 0 0
 #log
   padding-bottom: 4rem
   .header
