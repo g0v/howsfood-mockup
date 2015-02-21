@@ -194,10 +194,10 @@ a, a:link {
 }
 
 #nav {
-  background-color: #336633;
+  background-color: #cccccc;
 }
 #nav .category {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 0.5rem;
 }
 
@@ -229,12 +229,15 @@ a, a:link {
 }
 
 #log {
+  padding-top: 1.2rem;
   padding-bottom: 4rem;
 }
 #log .header {
   font-size: 1.2rem;
-  margin-top: 1rem;
 }
-#log .header:first-child {
-  margin-top: 0;
+#log .timestamp {
+  font-size: 1rem;
+}
+#log .timestamp .number {
+  margin: 0 0.1rem;
 }
