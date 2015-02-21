@@ -38,7 +38,20 @@ block content
 
     #list.ui.two.column.stackable.grid
       .column
-
+        .ui.segment
+          h2.ui.small.header 高村長無毒糙米
+          .ui.image
+            img(src='http://static.ettoday.net/images/173/d173736.jpg')
+          .category
+            a(href='farmer').ui.label
+              i.icon.leaf
+              span 鼓麥
+            a(href='farmer').ui.label
+              i.icon.user
+              span 高村長
+            a(href='farmer').ui.label
+              i.icon.marker
+              span 新天龍國
 block script
   script.
     $("#topbar a[href*='farmer']").addClass("active");
