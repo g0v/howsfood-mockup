@@ -26,6 +26,8 @@ block content
             input(placeholder="搜尋...",type="text")
             i.icon.search.link
     #tag
+      a.ui.tag.label 紅蘿蔔
+        .detail 10
       a.ui.tag.label 地瓜葉
         .detail 10
       a.ui.tag.label 糙米
@@ -34,14 +36,92 @@ block content
         .detail 10
       a.ui.tag.label 玉米
         .detail 10
-    .ui.divider
-    #list.ui.two.column.stackable.grid
+    .ui.hidden.divider
+    #list.ui.three.column.stackable.grid
       .column
-        .ui.list
-          .item 地瓜葉
-          .item 地瓜葉
-          .item 地瓜葉
-          .item 地瓜葉
+        .ui.fluid.card.receipt
+          .image
+            img(src='http://img.dodocook.com/user_upload/recipe/1/43/63/recipe_0064363_600_fit_1423715570.jpg')
+          .content
+            .header 蠔油時蔬
+            .meta 蔬食料理 / 炒
+            .description
+              p.title 食材
+              .ui.divided.list
+                .item 娃娃菜
+                  span.float.right 半朵
+                .item 綠竹筍
+                  span.float.right 適量
+                .active.item 紅蘿蔔
+                  span.float.right 適量
+                .item 鴻喜菇
+                  span.float.right 適量
+                .item 雪白菇
+                  span.float.right 適量
+                .item 玉米筍
+                  span.float.right 適量
+                .item 薑片
+                  span.float.right 適量
+              p.title 調味料
+              .ui.divided.list
+                .item 蠔油
+                  span.float.right 適量
+                .item 烏醋
+                  span.float.right 少許
+                .item 香油
+                  span.float.right 少許
+      .column
+        .ui.fluid.card.receipt
+          .image
+            img(src='http://img.dodocook.com/user_upload/recipe/0/20/08/recipe_0052008_600_fit_1401883118.jpg')
+          .content
+            .header 地瓜葉豆腐味增湯
+            .meta 蔬食料理 / 湯
+            .description
+              p.title 食材
+              .ui.divided.list
+                .active.item 地瓜葉
+                  span.float.right 150公克
+                .item 豆腐
+                  span.float.right 1/2塊
+                .item 柴魚片
+                  span.float.right 適量
+                .item 青蔥
+                  span.float.right 1根
+              p.title 調味料
+              .ui.divided.list
+                .item 鹽
+                  span.float.right 少許
+                .item 味增
+                  span.float.right 適量
+                .item 白胡椒粉
+                  span.float.right 少許
+      .column
+        .ui.fluid.card.receipt
+          .image
+            img(src='http://img.dodocook.com/user_upload/recipe/0/28/58/recipe_0062858_600_fit_1421285986.jpg')
+          .content
+            .header 古早味玉米蛋餅
+            .meta 小吃 / 蛋餅
+            .description
+              p.title 食材
+              .ui.divided.list
+                .item 中筋麵粉
+                  span.float.right 2匙
+                .item 地瓜粉
+                  span.float.right 2匙
+                .item 水
+                  span.float.right 5匙
+                .item 蔥
+                  span.float.right 少許
+                .item 蛋
+                  span.float.right 1顆
+                .active.item 玉米
+                  span.float.right 適量
+              p.title 調味料
+              .ui.divided.list
+                .item 鹽
+                  span.float.right 少許
 
 
 block script

@@ -27,10 +27,6 @@ a, a:link {
   color: inherit;
 }
 
-.hidden {
-  display: none;
-}
-
 .no.margin {
   margin: 0;
 }
@@ -128,6 +124,29 @@ a, a:link {
 }
 #content .product .dropdown .menu {
   margin-bottom: 3rem;
+}
+#content .receipt .image {
+  max-height: 10rem;
+  overflow: hidden;
+}
+#content .receipt .ui.list {
+  margin-top: 0;
+}
+#content .receipt .title {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  border-bottom: 1px #999999 solid;
+  font-weight: bold;
+  padding: 0.3em 0;
+}
+#content .receipt .item:first-child {
+  padding-top: 0.3em;
+}
+#content .receipt .item:last-child {
+  padding-bottom: 0.3em;
+}
+#content .receipt .active.item {
+  background-color: yellow;
 }
 
 #bottombar {
