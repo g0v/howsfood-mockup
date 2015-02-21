@@ -66,16 +66,6 @@
       </div>
     </footer>
     <script>
-      // for buy and book
-      ['yellow', 'teal', 'pink', 'purple'].forEach(function(color, index, array){
-        $('#filter .'+ color +'.label').parent('.item').on('click tap', function(){
-          $('#list .column').hide();
-          $('#list .'+ color +'.message').parents('.column').fadeIn();
-        });
-      });
-      $('#filter .all').on('click tap', function(){
-        $('#list .column').fadeIn();
-      });
       // for all pages
       $('#filter .item').on('click tap', function(){
         $('#filter .item').removeClass('active');
