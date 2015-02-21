@@ -160,6 +160,64 @@ a, a:link {
 
 #header {
   height: 10rem;
+  margin-top: 2.6rem;
   margin-bottom: 1rem;
-  background-color: #336699;
+  position: relative;
+  background: url(http://static.ettoday.net/images/173/d173736.jpg) repeat-x center bottom, #666666;
+}
+#header .background {
+  text-overflow: clip;
+  white-space: nowrap;
+  text-align: center;
+}
+#header .background .image {
+  height: 10rem;
+  display: inline;
+}
+#header .cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.5));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.5));
+}
+#header .cover .content {
+  text-align: center;
+}
+#header .cover .content h1 {
+  margin: 3rem 0 1rem 1rem;
+  font-size: 3rem;
+  letter-spacing: 0.3em;
+}
+
+#meta {
+  padding-bottom: 4rem;
+}
+#meta .image .top.label {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+#meta .text .item .key {
+  float: left;
+}
+#meta .text .item .value {
+  margin-left: 4rem;
+  padding-top: 0.3em;
+}
+#meta .label .icon:last-child {
+  margin: 0 0 0 0.75em;
+}
+
+#log {
+  padding-bottom: 4rem;
+}
+#log .header {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+#log .header:first-child {
+  margin-top: 0;
 }
