@@ -198,5 +198,16 @@ block content
 
 block script
   script.
+    // for buy and book
+    ['yellow', 'teal', 'pink', 'purple'].forEach(function(color, index, array){
+      $('#filter .'+ color +'.label').parent('.item').on('click tap', function(){
+        $('#list .column').hide();
+        $('#list .'+ color +'.message').parents('.column').fadeIn();
+      });
+    });
+    $('#filter .all').on('click tap', function(){
+      $('#list .column').fadeIn();
+    });
+    // for book
     $("#topbar a[href*='book']").addClass("active");
     $('#filter .purple.label').parent('.item').click();

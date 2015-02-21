@@ -10,38 +10,38 @@ block content
   #content.page.wrapper
     #filter.ui.secondary.pointing.menu
       a.item 上週食材
-        .ui.tiny.label 10
+        .ui.black.tiny.label
       a.item 本週食材
-        .ui.green.tiny.label 10
+        .ui.green.tiny.label
       a.item 我的最愛
-        .ui.yellow.tiny.label 10
-      a.item 穀麥
-      a.item 蔬菜
-      a.item 水果
-      a.item 肉類
-      a.item 水產
+        .ui.yellow.tiny.label
+      a.item.all 全部
+        .ui.tiny.label
       .right.menu
         .item
           .ui.icon.input.transparent
             input(placeholder="搜尋...",type="text")
             i.icon.search.link
     #tag
-      a.ui.tag.label 紅蘿蔔
-        .detail 10
       a.ui.tag.label 地瓜葉
-        .detail 10
-      a.ui.tag.label 糙米
-        .detail 10
-      a.ui.tag.label 空心菜
-        .detail 10
+        .detail
+      a.ui.tag.label 櫻花蝦
+        .detail
       a.ui.tag.label 玉米
-        .detail 10
+        .detail
+      a.ui.tag.label 糯米
+        .detail
+      a.ui.tag.label 蔥
+        .detail
+      a.ui.tag.label 紅蘿蔔
+        .detail
     .ui.hidden.divider
     #list.ui.three.column.stackable.grid
       .column
-        .ui.fluid.card.receipt
-          .image
+        .ui.fluid.black.card.receipt
+          a(href='http://www.dodocook.com/recipe/64363',target='_blank').image
             img(src='http://img.dodocook.com/user_upload/recipe/1/43/63/recipe_0064363_600_fit_1423715570.jpg')
+            .ui.black.label.bottom.right.attached 多多開伙
           .content
             .header 蠔油時蔬
             .meta 蔬食料理 / 炒
@@ -52,7 +52,7 @@ block content
                   span.float.right 半朵
                 .item 綠竹筍
                   span.float.right 適量
-                .active.item 紅蘿蔔
+                .item 紅蘿蔔
                   span.float.right 適量
                 .item 鴻喜菇
                   span.float.right 適量
@@ -70,17 +70,23 @@ block content
                   span.float.right 少許
                 .item 香油
                   span.float.right 少許
+          .extra.content
+            i.icon.star
+            | 加到我的最愛
       .column
-        .ui.fluid.card.receipt
-          .image
+        .ui.fluid.green.card.receipt
+          a(href='http://www.dodocook.com/recipe/52008',target='_blank').image
             img(src='http://img.dodocook.com/user_upload/recipe/0/20/08/recipe_0052008_600_fit_1401883118.jpg')
+            .ui.black.label.bottom.right.attached 多多開伙
+            .ui.corner.label.left.yellow
+              i.icon.star
           .content
             .header 地瓜葉豆腐味增湯
             .meta 蔬食料理 / 湯
             .description
               p.title 食材
               .ui.divided.list
-                .active.item 地瓜葉
+                .item 地瓜葉
                   span.float.right 150公克
                 .item 豆腐
                   span.float.right 1/2塊
@@ -96,10 +102,15 @@ block content
                   span.float.right 適量
                 .item 白胡椒粉
                   span.float.right 少許
+          .extra.content
+            i.icon.star.yellow
+            i.icon.green.checkmark.checked
+            | 已經加到我的最愛
       .column
         .ui.fluid.card.receipt
-          .image
+          a(href='http://www.dodocook.com/recipe/62858',target='_blank').image
             img(src='http://img.dodocook.com/user_upload/recipe/0/28/58/recipe_0062858_600_fit_1421285986.jpg')
+            .ui.black.label.bottom.right.attached 多多開伙
           .content
             .header 古早味玉米蛋餅
             .meta 小吃 / 蛋餅
@@ -116,15 +127,150 @@ block content
                   span.float.right 少許
                 .item 蛋
                   span.float.right 1顆
-                .active.item 玉米
+                .item 玉米
                   span.float.right 適量
               p.title 調味料
               .ui.divided.list
                 .item 鹽
                   span.float.right 少許
+          .extra.content
+            i.icon.star
+            | 加到我的最愛
+      .column
+        .ui.fluid.green.card.receipt
+          a(href='http://icook.tw/recipes/101390',target='_blank').image
+            img(src='https://d2lmcf1aevw3pp.cloudfront.net/v4W3OkK2w47aTSDHOE9adT4--bo=/800x600/uploads/recipe/cover/101390/de940b6d06c0894f.jpg')
+            .ui.black.label.bottom.right.attached 愛料理
+          .content
+            .header 櫻花蝦油飯
+            .meta 年菜 - 電鍋料理
+            .description
+              p.title 食材
+              .ui.divided.list
+                .item 長糯米
+                  span.float.right 4米杯
+                .item 櫻花蝦
+                  span.float.right 2/3碗
+                .item 乾香菇
+                  span.float.right 3-5朵
+                .item 薑末
+                  span.float.right 二大匙
+                .item 紅蔥頭末
+                  span.float.right 二大匙
+                .item 榨菜
+                  span.float.right 適量
+                .item 泡香菇水
+                  span.float.right 100ml左右
+              p.title 調味料
+              .ui.divided.list
+                .item 油
+                  span.float.right 1/2碗
+                .item 鹽
+                  span.float.right 一匙
+                .item 米酒
+                  span.float.right 一大匙（15ml)
+                .item 醬油
+                  span.float.right 兩大匙(30ml)
+                .item 胡椒粉
+                  span.float.right 適量
+                .item 鵝油
+                  span.float.right 一大匙
+          .extra.content
+            i.icon.star
+            | 加到我的最愛
+      .column
+        .ui.fluid.card.receipt
+          a(href='http://icook.tw/recipes/100855',target='_blank').image
+            img(src='https://d2lmcf1aevw3pp.cloudfront.net/4lSMkG_cNBpNrEnjXOPUvimq528=/800x600/uploads/recipe/cover/100855/ed86693f272ba7f8.jpg')
+            .ui.black.label.bottom.right.attached 愛料理
+            .ui.corner.label.left.yellow
+              i.icon.star
+          .content
+            .header 鹹豬肉糯米高麗菜捲
+            .meta
+            .description
+              p.title 食材
+              .ui.divided.list
+                .item 鹹豬肉
+                  span.float.right 300g
+                .item 香菇
+                  span.float.right 5朵
+                .item 油蔥酥
+                  span.float.right 1／3碗
+                .item 菜脯
+                  span.float.right 酌量
+                .item 糯米
+                  span.float.right 3杯
+                .item 高麗菜
+                  span.float.right 1顆
+              p.title 調味料
+              .ui.divided.list
+                .item 鹽
+                  span.float.right 少許
+                .item 胡椒粉
+                  span.float.right 少許
+                .item 醬油
+                  span.float.right 1大匙
+                .item 香菜
+                  span.float.right 酌量
+                .item 甜辣醬
+                  span.float.right 酌量
+          .extra.content
+            i.icon.star.yellow
+            i.icon.green.checkmark.checked
+            | 已經加到我的最愛
 
 
 block script
   script.
+    $('#filter .item').on('click tap', function(){
+      $('#tag .tag').removeClass('orange');
+    });
+
+    ['green', 'black'].forEach(function(color, index, array){
+      var count = $('#list .'+ color +'.receipt').length;
+      $('#filter .'+ color +'.label').text(count);
+      $('#filter .'+ color +'.label').parent('.item').on('click tap', function(){
+        $('#list .column').hide();
+        $('#list .'+ color +'.receipt').parent('.column').fadeIn();
+      });
+    });
+
+    var favcount = $('#list .yellow.corner.label').parents('.receipt').parent('.column').length;
+    $('#filter .yellow.label').text(favcount).parent('.item').on('click tap', function(){
+      $('#list .column').hide();
+      $('#list .yellow.corner.label').parents('.receipt').parent('.column').fadeIn();
+    });
+
+    var allcount = $('#list .column').length;
+    $('#filter .all .label').text(allcount);
+    $('#filter .all').on('click tap', function(){
+      $('#list .column').fadeIn();
+    });
+
+    $('#tag .tag').each(function(){
+      var tag = $(this).contents().filter(function(){
+        return this.nodeType===3;
+      }).text().trim();
+      var count = $('#list .column:contains("'+ tag +'")').length;
+      $('#list .list .item:contains("'+ tag +'")').addClass('active');
+      $(this).find('.detail').text(count);
+      $(this).on('click tap', function(){
+        $('#filter .item').removeClass('active');
+        $('#list .column').hide();
+        $('#list .column:contains("'+ tag +'")').fadeIn();
+        $('#tag .tag').removeClass('orange');
+        $(this).addClass('orange');
+      });
+    });
+
+    //$('#tag .tag').on('click tap', function(){
+    //  var tag = $(this).contents().filter(function(){
+    //    return this.nodeType===3;
+    //  }).text().trim();
+    //  $('#list .column').hide();
+    //  $('#list .column:contains("'+ tag +'")').fadeIn();
+    //});
+
     $("#topbar a[href*='food']").addClass("active");
     $('#filter .green.label').parent('.item').click();
