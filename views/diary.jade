@@ -45,13 +45,16 @@ block content
               .value 2015/1/1 (今天)
         .column
           .category
-            a(href='farmer').ui.label
+            a(href='buy').ui.label
+              i.icon.left.arrow
+              span 回上一頁
+            a(href='buy').ui.label
               i.icon.leaf
               span 鼓麥
-            a(href='farmer').ui.label
+            a(href='buy').ui.label
               i.icon.user
               span 高村長
-            a(href='farmer').ui.label
+            a(href='buy').ui.label
               i.icon.marker
               span 新天龍國
           .ui.divider
@@ -145,4 +148,4 @@ block content
 
 block script
   script.
-    $("#topbar a[href*='farmer']").addClass("active");
+    $("#topbar a[href*='buy']").addClass("active");
