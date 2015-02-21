@@ -62,3 +62,9 @@ block body
       $('#filter .item').removeClass('active');
       $(this).addClass('active');
     });
+    var active_content_string;
+    $("#search input").keypress(function(){
+      active_content_string = $(this).val();
+      $("#list .column").hide();
+      $("#list .column:contains(" + active_content_string + ")").fadeIn();
+    });

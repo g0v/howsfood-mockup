@@ -146,7 +146,7 @@ a, a:link {
   padding-bottom: 0.3em;
 }
 #content .receipt .active.item {
-  background-color: rgba(255, 165, 0, 0.2);
+  background-color: rgba(255, 165, 0, 0.1);
 }
 
 #bottombar {
@@ -158,39 +158,8 @@ a, a:link {
   z-index: 10;
 }
 
-#music, #news, #lesson, #download {
-  padding: 1rem 0;
-}
-#music #header, #news #header, #lesson #header, #download #header {
-  height: 8rem;
-  margin: -1rem 0 1rem 0;
-}
-#music #header .header, #news #header .header, #lesson #header .header, #download #header .header {
-  text-align: center;
-}
-
-#lesson #header {
+#header {
+  height: 10rem;
+  margin-bottom: 1rem;
   background-color: #336699;
-}
-#lesson .download.section {
-  text-align: center;
-  padding: 1rem;
-  margin: 0 -1rem -0.5rem -1rem;
-  background-color: #eeeeee;
-}
-#lesson .placeholder {
-  margin-top: 2.5rem !important;
-}
-#lesson .ui.top.attached.label {
-  text-align: center;
-}
-#lesson .ui.top.attached.label h3 .title {
-  padding: 0.5rem 0;
-  display: inline-block;
-}
-#lesson .ui.grid {
-  margin-top: 0.5rem;
-}
-#lesson .list .item .link {
-  margin-left: 0.5rem;
 }
