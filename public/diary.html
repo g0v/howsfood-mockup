@@ -43,7 +43,9 @@
         </div>
       </div>
     </nav>
-    <div id="content" class="page wrapper"></div>
+    <div id="content" class="page wrapper">
+      <section id="header"></section>
+    </div>
     <footer id="bottombar">
       <div class="ui borderless menu bar inverted"><a href="" class="item"><i class="icon info"></i>關於本計畫</a><a href="" class="item"><i class="icon github"></i>關於本站</a>
         <div class="right menu"><a target="_blank" href="" class="ui button item">好食機<i class="icon forward mail"></i></a><a target="_blank" href="" class="ui button item">愛樂活<i class="icon forward mail"></i></a><a target="_blank" href="" class="ui button item">g0v<i class="icon forward mail"></i></a>
@@ -55,6 +57,12 @@
       $('#filter .item').on('click tap', function(){
         $('#filter .item').removeClass('active');
         $(this).addClass('active');
+      });
+      var active_content_string;
+      $("#search input").keypress(function(){
+        active_content_string = $(this).val();
+        $("#list .column").hide();
+        $("#list .column:contains(" + active_content_string + ")").fadeIn();
       });
     </script>
     <script>$("#topbar a[href*='farmer']").addClass("active");</script>
