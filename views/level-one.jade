@@ -4,31 +4,45 @@ block body
 
   nav#topbar
     .ui.borderless.menu.bar.inverted
-      a.item(href="index")
-        | 好食市集
-        //-img.logo.image(src="img/logo-white.png")
-        //-span.logo.text 　
-      a.item(href="buy")
-        | 馬上買
-      a.item(href="book")
-        | 預購
-      a.item(href="food")
-        | 料理指南
-      //-a.item(href="farmer")
-        | 小農日記
+      span.tablet.phone
+        .ui.dropdown.item
+          | 好食市集
+          i.icon.dropdown
+          .menu
+            a.item(href="buy")
+              | 馬上買
+            a.item(href="book")
+              | 預購
+            a.item(href="food")
+              | 料理指南
+      span.desktop.laptop
+        a.item(href="index")
+          | 好食市集
+          //-img.logo.image(src="img/logo-white.png")
+          //-span.logo.text 　
+        a.item(href="buy")
+          | 馬上買
+        a.item(href="book")
+          | 預購
+        a.item(href="food")
+          | 料理指南
+        //-a.item(href="farmer")
+          | 小農日記
       .right.menu
-        a.item 本週菜籃
-          .ui.right.green.label 10
-        .ui.simple.dropdown.item
+        span.desktop.laptop.tablet
+          a.item 本週菜籃
+            .ui.right.green.label 10
+        .ui.dropdown.item
           .ui.image.avatar
             img(src="https://pbs.twimg.com/profile_images/93787198/etb2006.jpg")
           | ETBlue
           i.icon.dropdown
           .menu
-            //-a.item 菜籃
-              .ui.right.blue.label 10
+            span.phone
+              a.item 本週菜籃
+                .ui.right.green.label 10
+            a.item 我的菜市
             a.item 我的菜籃
-            //a.item 我的菜市
             a.item 設定
             a.item 登出
         //-a.item(href="")
@@ -40,21 +54,41 @@ block body
 
   footer#bottombar
     .ui.borderless.menu.bar.inverted
-      a.item(href="https://g0v.hackpad.com/HowsFood--29nJmuZfeBt",target='_blank')
-        i.icon.info
-        | 關於本計畫
-      a.item(href="https://github.com/g0v/howsfood-mockup",target='_blank')
-        i.icon.github
-        | 關於本站
+      span.phone
+        .ui.upward.dropdown.item 關於
+          i.icon.dropdown
+          .menu
+            a.item(href="https://g0v.hackpad.com/HowsFood--29nJmuZfeBt",target='_blank')
+              i.icon.info
+              | 關於本計畫
+            a.item(href="https://github.com/g0v/howsfood-mockup",target='_blank')
+              i.icon.github
+              | 關於本站
+      span.desktop.laptop.tablet
+        a.item(href="https://g0v.hackpad.com/HowsFood--29nJmuZfeBt",target='_blank')
+          i.icon.info
+          | 關於本計畫
+        a.item(href="https://github.com/g0v/howsfood-mockup",target='_blank')
+          i.icon.github
+          | 關於本站
       .right.menu
-        a.ui.button.item(target="_blank",href="http://www.howsfood.com/") 好食機
-          i.icon.forward.mail
-        //-a.ui.button.item(target="_blank",href="") 好食光
-          i.icon.forward.mail
-        a.ui.button.item(target="_blank",href="http://www.ilohas.info/") 愛樂活
-          i.icon.forward.mail
-        a.ui.button.item(target="_blank",href="http://g0v.tw/") g0v
-          i.icon.forward.mail
+        span.phone.tablet
+          .ui.upward.dropdown.item 友站
+            i.icon.dropdown
+            .menu
+              a.item(target="_blank",href="http://www.howsfood.com/") 好食機
+                i.icon.forward.mail
+              a.item(target="_blank",href="http://www.ilohas.info/") 愛樂活
+                i.icon.forward.mail
+              a.item(target="_blank",href="http://g0v.tw/") g0v
+                i.icon.forward.mail
+        span.desktop.laptop
+          a.ui.button.item(target="_blank",href="http://www.howsfood.com/") 好食機
+            i.icon.forward.mail
+          a.ui.button.item(target="_blank",href="http://www.ilohas.info/") 愛樂活
+            i.icon.forward.mail
+          a.ui.button.item(target="_blank",href="http://g0v.tw/") g0v
+            i.icon.forward.mail
 
   script.
     // for all pages

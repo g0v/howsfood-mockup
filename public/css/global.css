@@ -65,6 +65,30 @@ a, a:link {
   box-shadow: none;
 }
 
+.desktop, .laptop, .tablet, .phone {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop {
+    display: initial;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 840px) {
+  .laptop {
+    display: initial;
+  }
+}
+@media screen and (max-width: 840px) and (min-width: 540px) {
+  .tablet {
+    display: initial;
+  }
+}
+@media screen and (max-width: 540px) {
+  .phone {
+    display: initial;
+  }
+}
 #topbar {
   position: fixed;
   left: 0;
@@ -86,6 +110,15 @@ a, a:link {
 #topbar .ui.menu .logo.image {
   height: 1rem;
   display: inline;
+}
+
+#bottombar {
+  background-color: #333333;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
 }
 
 .dropdown {
@@ -148,15 +181,6 @@ a, a:link {
 }
 #content .receipt .active.item {
   background-color: rgba(255, 165, 0, 0.1);
-}
-
-#bottombar {
-  background-color: #333333;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
 }
 
 #header {
