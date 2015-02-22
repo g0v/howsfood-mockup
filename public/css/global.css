@@ -210,9 +210,11 @@ a, a:link {
 }
 #header .cover .content {
   text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
 }
 #header .cover .content h1 {
-  margin: 3rem 0 1rem 1rem;
   font-size: 3rem;
   letter-spacing: 0.3em;
 }
