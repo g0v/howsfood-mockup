@@ -79,12 +79,12 @@ a, a:link {
     display: initial;
   }
 }
-@media screen and (max-width: 840px) and (min-width: 540px) {
+@media screen and (max-width: 840px) and (min-width: 560px) {
   .tablet {
     display: initial;
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 560px) {
   .phone {
     display: initial;
   }
@@ -215,6 +215,7 @@ a, a:link {
   width: 100%;
 }
 #header .cover .content h1 {
+  padding-left: 1rem;
   font-size: 3rem;
   letter-spacing: 0.3em;
 }
