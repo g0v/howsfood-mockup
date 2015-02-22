@@ -55,6 +55,26 @@ a, a:link
   +border-radius(0)
   +box-shadow(none)
 
+$phone: 540px
+$tablet: 840px
+$laptop: 1024px
+
+.desktop, .laptop, .tablet, .phone
+  display: none
+
+@media screen and (min-width: $laptop)
+  .desktop
+    display: initial
+@media screen and (max-width: $laptop) and (min-width: $tablet)
+  .laptop
+    display: initial
+@media screen and (max-width: $tablet) and (min-width: $phone)
+  .tablet
+    display: initial
+@media screen and (max-width: $phone)
+  .phone
+    display: initial
+
 #topbar
   position: fixed
   left: 0
@@ -73,6 +93,14 @@ a, a:link
       height: 1rem
       //-margin: -1rem 0.5rem -0.1rem 0
       display: inline
+
+#bottombar
+  background-color: #333
+  position: fixed
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 10
 
 .dropdown
   z-index: 5
@@ -130,14 +158,6 @@ a, a:link
       padding-bottom: 0.3em
     .active.item
       background-color: rgba(orange,0.1)
-
-#bottombar
-  background-color: #333
-  position: fixed
-  left: 0
-  right: 0
-  bottom: 0
-  z-index: 10
 
 #header
   height: 10rem
