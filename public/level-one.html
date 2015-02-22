@@ -32,22 +32,29 @@
   </head>
   <body>
     <nav id="topbar">
-      <div class="ui borderless menu bar inverted"><a href="index" class="item">好食市集</a><a href="buy" class="item">馬上買</a><a href="book" class="item">預購</a><a href="food" class="item">料理指南</a>
-        <div class="right menu"><a class="item">本週菜籃
-            <div class="ui right green label">10</div></a>
-          <div class="ui simple dropdown item">
+      <div class="ui borderless menu bar inverted"><span class="tablet phone">
+          <div class="ui dropdown item">好食市集<i class="icon dropdown"></i>
+            <div class="menu"><a href="buy" class="item">馬上買</a><a href="book" class="item">預購</a><a href="food" class="item">料理指南</a></div>
+          </div></span><span class="desktop laptop"><a href="index" class="item">好食市集</a><a href="buy" class="item">馬上買</a><a href="book" class="item">預購</a><a href="food" class="item">料理指南</a></span>
+        <div class="right menu"><span class="desktop laptop tablet"><a class="item">本週菜籃
+              <div class="ui right green label">10</div></a></span>
+          <div class="ui dropdown item">
             <div class="ui image avatar"><img src="https://pbs.twimg.com/profile_images/93787198/etb2006.jpg"/></div>ETBlue<i class="icon dropdown"></i>
-            <div class="menu"><a class="item">我的菜籃</a>
-              <!--a.item 我的菜市--><a class="item">設定</a><a class="item">登出</a>
-            </div>
+            <div class="menu"><span class="phone"><a class="item">本週菜籃
+                  <div class="ui right green label">10</div></a></span><a class="item">我的菜市</a><a class="item">我的菜籃</a><a class="item">設定</a><a class="item">登出</a></div>
           </div>
         </div>
       </div>
     </nav>
     <footer id="bottombar">
-      <div class="ui borderless menu bar inverted"><a href="https://g0v.hackpad.com/HowsFood--29nJmuZfeBt" target="_blank" class="item"><i class="icon info"></i>關於本計畫</a><a href="https://github.com/g0v/howsfood-mockup" target="_blank" class="item"><i class="icon github"></i>關於本站</a>
-        <div class="right menu"><a target="_blank" href="http://www.howsfood.com/" class="ui button item">好食機<i class="icon forward mail"></i></a><a target="_blank" href="http://www.ilohas.info/" class="ui button item">愛樂活<i class="icon forward mail"></i></a><a target="_blank" href="http://g0v.tw/" class="ui button item">g0v<i class="icon forward mail"></i></a>
-        </div>
+      <div class="ui borderless menu bar inverted"><span class="phone">
+          <div class="ui upward dropdown item">關於<i class="icon dropdown"></i>
+            <div class="menu"><a href="https://g0v.hackpad.com/HowsFood--29nJmuZfeBt" target="_blank" class="item"><i class="icon info"></i>關於本計畫</a><a href="https://github.com/g0v/howsfood-mockup" target="_blank" class="item"><i class="icon github"></i>關於本站</a></div>
+          </div></span><span class="desktop laptop tablet"><a href="https://g0v.hackpad.com/HowsFood--29nJmuZfeBt" target="_blank" class="item"><i class="icon info"></i>關於本計畫</a><a href="https://github.com/g0v/howsfood-mockup" target="_blank" class="item"><i class="icon github"></i>關於本站</a></span>
+        <div class="right menu"><span class="phone tablet">
+            <div class="ui upward dropdown item">友站<i class="icon dropdown"></i>
+              <div class="menu"><a target="_blank" href="http://www.howsfood.com/" class="item">好食機<i class="icon forward mail"></i></a><a target="_blank" href="http://www.ilohas.info/" class="item">愛樂活<i class="icon forward mail"></i></a><a target="_blank" href="http://g0v.tw/" class="item">g0v<i class="icon forward mail"></i></a></div>
+            </div></span><span class="desktop laptop"><a target="_blank" href="http://www.howsfood.com/" class="ui button item">好食機<i class="icon forward mail"></i></a><a target="_blank" href="http://www.ilohas.info/" class="ui button item">愛樂活<i class="icon forward mail"></i></a><a target="_blank" href="http://g0v.tw/" class="ui button item">g0v<i class="icon forward mail"></i></a></span></div>
       </div>
     </footer>
     <script>
